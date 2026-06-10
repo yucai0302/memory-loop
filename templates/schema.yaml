@@ -1,0 +1,40 @@
+# memory-loop schema configuration
+# Edit this file to customize what your project memory tracks.
+# Changes take effect on the next Claude Code session start.
+
+version: "1.0"
+
+hot_layer:
+  sections:
+    - name: "Project Context"
+      description: "Project type, core tech stack, architecture overview. Written once, rarely changed."
+      max_items: 1
+      format: "prose"
+
+    - name: "Active Goals"
+      description: "Tasks currently in progress."
+      max_items: 5
+      format: "- [goal description] | started: YYYY-MM-DD"
+
+    - name: "Decisions"
+      description: "Key technical decisions that should not be revisited without good reason."
+      max_items: 10
+      format: "- YYYY-MM-DD | chose X over Y | reason: Z"
+
+    - name: "Gotchas"
+      description: "Known bugs, traps, constraints, and rules the agent must follow."
+      max_items: 20
+      format: "- [module] problem description → workaround / rule"
+
+    - name: "Completed"
+      description: "Recently finished tasks. Rolling window, oldest drop off first."
+      max_items: 10
+      format: "- YYYY-MM-DD | task description | outcome"
+
+compression:
+  # When MEMORY.md exceeds this character count, session end will warn you to compress.
+  # Run /memory-loop:compress to trigger the compression agent.
+  trigger_chars: 8000
+  # How many recent items to keep in each section when compressing.
+  keep_recent_decisions: 5
+  keep_recent_completed: 3
