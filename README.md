@@ -249,3 +249,9 @@ If you build a custom schema for a specific domain (chip design, data science, g
 ## License
 
 MIT © [yucai0302](https://github.com/yucai0302)
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yucai0302/memory-loop&type=Date)](https://star-history.com/#yucai0302/memory-loop&Date)
