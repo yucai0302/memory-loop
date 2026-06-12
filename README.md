@@ -18,6 +18,19 @@
 
 ---
 
+## Installation
+
+Run these two commands in Claude Code:
+
+```bash
+/plugin marketplace add yucai0302/memory-loop
+/plugin install memory-loop@memory-loop
+```
+
+Select **Install for you (user scope)**, then restart Claude Code.
+
+---
+
 ## Background
 
 [Loop Engineering](https://addyosmani.com/blog/loop-engineering/) by Addy Osmani describes a shift in how we work with coding agents:
