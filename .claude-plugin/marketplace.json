@@ -1,0 +1,14 @@
+{
+  "name": "memory-loop",
+  "owner": {
+    "name": "yucai0302"
+  },
+  "description": "Persistent project-scoped memory for Claude Code",
+  "plugins": [
+    {
+      "name": "memory-loop",
+      "source": "./",
+      "description": "Persistent project memory for Claude Code. Automatically loads and saves structured memory across sessions with compression support."
+    }
+  ]
+}
