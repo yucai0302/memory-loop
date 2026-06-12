@@ -18,6 +18,19 @@
 
 ---
 
+## 安装
+
+在 Claude Code 中执行以下两条命令：
+
+```bash
+/plugin marketplace add yucai0302/memory-loop
+/plugin install memory-loop@memory-loop
+```
+
+选择 **Install for you (user scope)**，重启 CC 即可。
+
+---
+
 ## 背景
 
 Addy Osmani 在 [Loop Engineering](https://addyosmani.com/blog/loop-engineering/) 中提出了一种与 AI 编程 Agent 协作的新范式：
